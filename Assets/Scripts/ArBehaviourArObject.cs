@@ -198,7 +198,7 @@ namespace com.arpoise.arpoiseapp
                 var evolutionOfFish = objectToAdd.GetComponent<EvolutionOfFish>();
                 if (evolutionOfFish != null)
                 {
-                    evolutionOfFish.ArCamera = CameraGameObject;
+                    evolutionOfFish.ArCamera = ArCamera;
                 }
             }
             else if ("AB_EvolutionOfFish".Equals(objectName))
@@ -207,7 +207,7 @@ namespace com.arpoise.arpoiseapp
                 if (evolutionOfFish != null)
                 {
                     evolutionOfFish.Index = _abEvolutionOfFishIndex++ % 2;
-                    evolutionOfFish.ArCamera = CameraGameObject;
+                    evolutionOfFish.ArCamera = ArCamera;
 
                     foreach (var action in poi.actions)
                     {
@@ -716,10 +716,11 @@ namespace com.arpoise.arpoiseapp
             {
                 foreach (var arObject in existingArObjects)
                 {
-                    var poi = pois.FirstOrDefault(x => arObject.Id == x.id
-                                               && arObject.GameObjectName.Equals(x.GameObjectName)
-                                               && (string.IsNullOrWhiteSpace(x.BaseUrl) || arObject.BaseUrl.Equals(x.BaseUrl))
-                              );
+                    var poi = pois.FirstOrDefault(
+                        x => arObject.Id == x.id
+                        && arObject.GameObjectName.Equals(x.GameObjectName)
+                        && (string.IsNullOrWhiteSpace(x.BaseUrl) || arObject.BaseUrl.Equals(x.BaseUrl))
+                        );
                     if (poi == null)
                     {
                         arObjectState.ArObjectsToDelete.Add(arObject);

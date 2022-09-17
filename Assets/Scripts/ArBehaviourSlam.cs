@@ -50,6 +50,7 @@ namespace com.arpoise.arpoiseapp
         public GameObject GeneratePlanes;
         public GameObject HitAnchor;
         public GameObject DetectAPlaneOverLay;
+        public GameObject PlaneFrame;
 
         private bool _myIsSlam = false;
 #endif
@@ -171,6 +172,11 @@ namespace com.arpoise.arpoiseapp
                 if (DetectAPlaneOverLay != null && DetectAPlaneOverLay.gameObject.activeSelf != slamObjectsAvailable)
                 {
                     DetectAPlaneOverLay.SetActive(slamObjectsAvailable);
+                }
+                
+                if (PlaneFrame != null && PlaneFrame.gameObject.activeSelf != slamObjectsAvailable)
+                {
+                    PlaneFrame.SetActive(slamObjectsAvailable);
                 }
             }
 #endif

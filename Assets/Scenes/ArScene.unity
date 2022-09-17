@@ -347,8 +347,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4f22671e9687b48b62f69d9a0e6ec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ArCamera: {fileID: 0}
-  ArCameraGameObject: {fileID: 1479066982}
+  ArCamera: {fileID: 1479066982}
+  ArCameraGameObject: {fileID: 0}
   RecordingFrameRate: 0
   SceneAnchor: {fileID: 813781979}
   Wrapper: {fileID: 1265291788}
@@ -362,7 +362,6 @@ MonoBehaviour:
   PanelHeaderButton: {fileID: 80896538}
   ContentPanel: {fileID: 1413246688}
   ButtonObjectPool: {fileID: 304134660}
-  Cube: {fileID: 0}
 --- !u!4 &813781981
 Transform:
   m_ObjectHideFlags: 0

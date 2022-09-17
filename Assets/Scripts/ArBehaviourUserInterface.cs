@@ -344,7 +344,7 @@ namespace com.arpoise.arpoiseapp
             {
                 InitialHeading = HeadingShown;
             }
-            var camera = CameraGameObject != null ? CameraGameObject : Camera.main.gameObject;
+            var camera = ArCamera;
             if (camera != null && camera.transform != null && camera.transform.forward != null)
             {
                 if (CameraIsInitializing || InitialCameraAngle == -1000)

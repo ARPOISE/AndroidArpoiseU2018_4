@@ -64,8 +64,7 @@ namespace com.arpoise.arpoiseapp
 #else
 #if QUEST_ARPOISE
 #else
-            var camera = CameraGameObject;
-            camera.GetComponent<VuforiaBehaviour>().enabled = true;
+            ArCamera.GetComponent<VuforiaBehaviour>().enabled = true;
             VuforiaRuntime.Instance.InitVuforia();
 #endif
 #endif

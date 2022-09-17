@@ -48,9 +48,7 @@ namespace com.arpoise.arpoiseapp
     {
         #region Globals
 
-        public Camera ArCamera = null;
-        public GameObject ArCameraGameObject = null;
-        public GameObject CameraGameObject { get { return ArCamera != null ? ArCamera.gameObject : ArCameraGameObject != null ? ArCameraGameObject : Camera.main.gameObject; } }
+        public GameObject ArCamera = null;
         public ArObjectState ArObjectState { get; protected set; }
         public string ErrorMessage { get; set; }
         public float RecordingFrameRate = 0;
@@ -362,12 +360,11 @@ namespace com.arpoise.arpoiseapp
                     //if (second >= nextMove)
                     //{
                     //    nextMove = second + 6 + random.Next(0, 6);
-
                     //    FilteredLatitude = OriginalLatitude + 0.00001f * random.Next(-5, 5);
                     //    FilteredLongitude = OriginalLongitude + 0.00001f * random.Next(-4, 4);
                     //    Debug.Log("UNITY_EDITOR new location, lat " + FilteredLatitude + ", lon " + FilteredLongitude);
                     //}
-                    FilteredLatitude += 0.00001F;
+                    //FilteredLatitude += 0.00001F;
                     var arObjectState = ArObjectState;
                     if (arObjectState != null)
                     {
