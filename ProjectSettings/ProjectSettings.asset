@@ -162,7 +162,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.arpoise.ARpoise
   buildNumber: {}
-  AndroidBundleVersionCode: 2022000917
+  AndroidBundleVersionCode: 2023012500
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 0
