@@ -162,9 +162,9 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.arpoise.ARpoise
   buildNumber: {}
-  AndroidBundleVersionCode: 2023012500
+  AndroidBundleVersionCode: 2023061000
   AndroidMinSdkVersion: 16
-  AndroidTargetSdkVersion: 0
+  AndroidTargetSdkVersion: 31
   AndroidPreferredInstallLocation: 0
   aotOptions: 
   stripEngineCode: 0
@@ -645,7 +645,8 @@ PlayerSettings:
   webGLCompressionFormat: 1
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    7: USES_VUFORIA
   platformArchitecture: {}
   scriptingBackend:
     Android: 1
